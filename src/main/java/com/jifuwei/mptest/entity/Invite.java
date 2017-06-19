@@ -5,6 +5,8 @@ import java.util.Date;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
+import org.dozer.Mapping;
+
 import java.io.Serializable;
 
 /**
@@ -24,6 +26,7 @@ public class Invite extends Model<Invite> {
 	private Date created;
 	private Date updated;
 	private Date deleted;
+	@Mapping("haha")
 	private Integer version;
 	@TableField("userId")
 	private Long userId;
